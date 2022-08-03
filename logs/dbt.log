@@ -1,0 +1,165 @@
+
+
+============================== 2022-07-29 04:24:42.139593 | 25625fe4-00b3-4f33-b2cf-a9c8f79b9be6 ==============================
+04:24:42.139593 [info ] [MainThread]: Running with dbt=1.0.4
+04:24:42.139994 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/Users/cuongnc/PycharmProjects/GE_example', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, config_dir=False, defer=None, state=None, cls=<class 'dbt.task.debug.DebugTask'>, which='debug', rpc_method=None)
+04:24:42.140173 [debug] [MainThread]: Tracking: tracking
+04:24:42.166706 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe613c6c8b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe613c48eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe613c49220>]}
+04:24:42.299597 [debug] [MainThread]: Executing "git --help"
+04:24:42.318604 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+04:24:42.320294 [debug] [MainThread]: STDERR: "b''"
+04:24:42.336497 [debug] [MainThread]: Acquiring new postgres connection "debug"
+04:24:42.338782 [debug] [MainThread]: Using postgres connection "debug"
+04:24:42.339236 [debug] [MainThread]: On debug: select 1 as id
+04:24:42.340161 [debug] [MainThread]: Opening a new connection, currently in state init
+04:24:42.422523 [debug] [MainThread]: Postgres adapter: Got an error when attempting to open a postgres connection: 'could not translate host name "postgres" to address: nodename nor servname provided, or not known
+'
+04:24:42.423200 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+04:24:42.423461 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+04:24:42.423861 [debug] [MainThread]: On debug: No close available on handle
+04:24:42.424891 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe613e534c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe613e53ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe613e53d60>]}
+04:24:43.482959 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2022-07-29 04:25:29.193460 | 3042a985-bc45-4833-bc13-3734c75b928e ==============================
+04:25:29.193460 [info ] [MainThread]: Running with dbt=1.0.4
+04:25:29.194131 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/Users/cuongnc/PycharmProjects/GE_example/dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, config_dir=False, defer=None, state=None, cls=<class 'dbt.task.debug.DebugTask'>, which='debug', rpc_method=None)
+04:25:29.194325 [debug] [MainThread]: Tracking: tracking
+04:25:29.215572 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf67c48d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf67c486d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf67c34700>]}
+04:25:29.217390 [debug] [MainThread]: Executing "git --help"
+04:25:29.231271 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+04:25:29.231893 [debug] [MainThread]: STDERR: "b''"
+04:25:29.233097 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf67c495e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf67c48fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf67c48220>]}
+
+
+============================== 2022-07-29 04:26:06.969297 | 080529f9-f203-4e75-9f64-62b84029b3b6 ==============================
+04:26:06.969297 [info ] [MainThread]: Running with dbt=1.0.4
+04:26:06.969833 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/Users/cuongnc/PycharmProjects/GE_example', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, config_dir=False, defer=None, state=None, cls=<class 'dbt.task.debug.DebugTask'>, which='debug', rpc_method=None)
+04:26:06.970022 [debug] [MainThread]: Tracking: tracking
+04:26:06.992296 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fefa1c6c8b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fefa1c48e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fefa1c49220>]}
+04:26:07.079708 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+04:26:07.080109 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '080529f9-f203-4e75-9f64-62b84029b3b6', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fefa1e48bb0>]}
+04:26:07.080444 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+04:26:07.080713 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '080529f9-f203-4e75-9f64-62b84029b3b6', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fefa1e48c10>]}
+04:26:07.097552 [debug] [MainThread]: Executing "git --help"
+04:26:07.114546 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+04:26:07.115700 [debug] [MainThread]: STDERR: "b''"
+04:26:07.122025 [debug] [MainThread]: Acquiring new postgres connection "debug"
+04:26:07.124129 [debug] [MainThread]: Using postgres connection "debug"
+04:26:07.124482 [debug] [MainThread]: On debug: select 1 as id
+04:26:07.124746 [debug] [MainThread]: Opening a new connection, currently in state init
+04:26:07.131507 [debug] [MainThread]: Postgres adapter: Got an error when attempting to open a postgres connection: 'could not translate host name "postgres" to address: nodename nor servname provided, or not known
+'
+04:26:07.132036 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+04:26:07.132242 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+04:26:07.132508 [debug] [MainThread]: On debug: No close available on handle
+04:26:07.133497 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fefa1e3c970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fefa1e6dd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fefa1e6d220>]}
+04:26:08.231456 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2022-07-29 04:26:20.779368 | a973a3df-58f4-40ff-b961-55ec9bcde34a ==============================
+04:26:20.779368 [info ] [MainThread]: Running with dbt=1.0.4
+04:26:20.779941 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/Users/cuongnc/PycharmProjects/GE_example', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target='local_dev', vars='{}', log_cache_events=False, threads=None, select=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+04:26:20.780444 [debug] [MainThread]: Tracking: tracking
+04:26:20.799418 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee90cbd7c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee90bdebe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee90cbed60>]}
+04:26:20.817791 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+04:26:20.818349 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'a973a3df-58f4-40ff-b961-55ec9bcde34a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee90e33910>]}
+04:26:20.846047 [debug] [MainThread]: Parsing macros/catalog.sql
+04:26:20.852011 [debug] [MainThread]: Parsing macros/relations.sql
+04:26:20.853668 [debug] [MainThread]: Parsing macros/adapters.sql
+04:26:20.881506 [debug] [MainThread]: Parsing macros/materializations/snapshot_merge.sql
+04:26:20.883454 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+04:26:20.887879 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+04:26:20.890554 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+04:26:20.892447 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+04:26:20.913465 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+04:26:20.927625 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+04:26:20.941884 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+04:26:20.947461 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+04:26:20.949493 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+04:26:20.951477 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+04:26:20.956493 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+04:26:20.970295 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+04:26:20.971975 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+04:26:20.984391 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+04:26:21.004433 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+04:26:21.013810 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+04:26:21.017052 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+04:26:21.025417 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+04:26:21.026897 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+04:26:21.029905 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+04:26:21.032526 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+04:26:21.039983 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+04:26:21.060042 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+04:26:21.061780 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+04:26:21.064577 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+04:26:21.066294 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+04:26:21.067256 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+04:26:21.067846 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+04:26:21.068595 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+04:26:21.070194 [debug] [MainThread]: Parsing macros/etc/statement.sql
+04:26:21.075245 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+04:26:21.085164 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+04:26:21.087602 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+04:26:21.090716 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+04:26:21.102952 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+04:26:21.107046 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+04:26:21.112481 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+04:26:21.121381 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+04:26:21.133405 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+04:26:21.381049 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.taxi_demo
+
+04:26:21.387501 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a973a3df-58f4-40ff-b961-55ec9bcde34a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee90bcac10>]}
+04:26:21.396510 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a973a3df-58f4-40ff-b961-55ec9bcde34a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee90bca910>]}
+04:26:21.396892 [info ] [MainThread]: Found 0 models, 0 tests, 0 snapshots, 0 analyses, 165 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+04:26:21.397956 [info ] [MainThread]: 
+04:26:21.398301 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+04:26:21.406375 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee90bcaa60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee90bcaf10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee90bca4c0>]}
+
+
+============================== 2022-07-29 04:28:06.831041 | 4de7cb6f-1dcc-47c5-830c-b273d237b490 ==============================
+04:28:06.831041 [info ] [MainThread]: Running with dbt=1.0.4
+04:28:06.832486 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/Users/cuongnc/PycharmProjects/GE_example/dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, config_dir=False, defer=None, state=None, cls=<class 'dbt.task.debug.DebugTask'>, which='debug', rpc_method=None)
+04:28:06.832696 [debug] [MainThread]: Tracking: tracking
+04:28:06.858038 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8de056b940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8de0548e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8de0549730>]}
+04:28:06.940705 [debug] [MainThread]: Executing "git --help"
+04:28:06.969164 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+04:28:06.971217 [debug] [MainThread]: STDERR: "b''"
+04:28:06.981887 [debug] [MainThread]: Acquiring new postgres connection "debug"
+04:28:06.983661 [debug] [MainThread]: Using postgres connection "debug"
+04:28:06.983943 [debug] [MainThread]: On debug: select 1 as id
+04:28:06.984229 [debug] [MainThread]: Opening a new connection, currently in state init
+04:28:06.988971 [debug] [MainThread]: Postgres adapter: Got an error when attempting to open a postgres connection: 'could not translate host name "postgres" to address: nodename nor servname provided, or not known
+'
+04:28:06.989497 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+04:28:06.989688 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+04:28:06.990030 [debug] [MainThread]: On debug: No close available on handle
+04:28:06.991053 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8de0653760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8de06539d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8de0653a60>]}
+04:28:08.237430 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2022-07-29 04:28:22.009454 | 16fff269-29f5-4119-8e5e-7e42ca64542d ==============================
+04:28:22.009454 [info ] [MainThread]: Running with dbt=1.0.4
+04:28:22.009833 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/Users/cuongnc/PycharmProjects/GE_example/dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, config_dir=False, defer=None, state=None, cls=<class 'dbt.task.debug.DebugTask'>, which='debug', rpc_method=None)
+04:28:22.010008 [debug] [MainThread]: Tracking: tracking
+04:28:22.030041 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4b046c8b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4b0448eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4b0449220>]}
+04:28:22.113262 [debug] [MainThread]: Executing "git --help"
+04:28:22.138351 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+04:28:22.140054 [debug] [MainThread]: STDERR: "b''"
+04:28:22.150590 [debug] [MainThread]: Acquiring new postgres connection "debug"
+04:28:22.151460 [debug] [MainThread]: Using postgres connection "debug"
+04:28:22.151896 [debug] [MainThread]: On debug: select 1 as id
+04:28:22.152439 [debug] [MainThread]: Opening a new connection, currently in state init
+04:28:22.157757 [debug] [MainThread]: Postgres adapter: Got an error when attempting to open a postgres connection: 'could not translate host name "postgres" to address: nodename nor servname provided, or not known
+'
+04:28:22.158182 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+04:28:22.158399 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+04:28:22.158611 [debug] [MainThread]: On debug: No close available on handle
+04:28:22.159524 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4b06534c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4b0653ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4b0653d60>]}
+04:28:23.473576 [debug] [MainThread]: Connection 'debug' was properly closed.
